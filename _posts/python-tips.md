@@ -5,6 +5,79 @@ tags:
  - python
 ---
 
+### system
+sys.version
+sys.platform
+sys.argv
+sys.maxint
+
+import re
+dir(re) inspect module, object
+
+### python type system
+base type: object
+primitive types: int, float, bool, long, complex
+container type: tuple, string, unicode, list, set, fronzenset, dictionary
+code type:
+internal type:
+
+immutable: tuple, string, unicode, fronzenset
+
+
+isinstance(12, object)
+
+### duck type
+1 + 1 is syntax of 1.__add__(1)
+[1,2,3][0] => [1,2,3].__getitem__(0)
+
+isinstance(obj, type) vs duck type
+
+
+### int float
+max value: sys.maxint, sys.float_info
+32bit cpu: 2**31 - 1, x64: 2**63 -1 
+
+long: not bounded
+
+literals 8 16 10 base: 0x123, 0123, 123
+
+right:
+2**2**3 = 2 ** ( 2 ** 3 )
+
+10.1 // 2 == 5.0
+
+
+### string unicode
+string is ascii characters
+
+unicode -> string:
+u'或者'.encode('utf-8')
+=> '\xe6\x88\x96\xe8\x80\x85'
+string -> unicode
+unicode('\xe6\x88\x96\xe8\x80\x85', 'utf8') => u'或者'
+
+len(u'或者') == 2
+
+### list map
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+letters[1]
+if 'a' in letters:
+    pass
+
+
+map = { "name": "bob", "age":123 }
+map["name"]
+if "name" in map:
+    pass
+
+for k,v in map.iteritems():
+    print k,v
+
+### python pip
+
+see package version:
+pip show Flask
+pip list
 
 ### Python socket编程
 

@@ -5,6 +5,11 @@ tags:
  - solr
 ---
 
+### classpath
+
+chinese analysis:
+add solr/contrib/analysis-extras/lucene-libs/* to solr/server/solr-webapp/webapp/WEB-INF/lib
+
 ### 命令行
 
 ./solr-5.5.0/bin/solr delete -c fslink
