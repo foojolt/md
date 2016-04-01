@@ -8,7 +8,7 @@
 
 3 在进行数据库操作或IO操作时，必须确保资源在使用完毕后得到释放，并且必须确保释放操作在finally中进行。 
 
-4对于if…else if…(后续可能有多个else if…)这种类型的条件判断，最后必须包含一个else分支，避免出现分支遗漏，造成错误；每个switch-case语句都必须保证有default，避免出现分支遗漏，造成错误。 
+4 对于if…else if…(后续可能有多个else if…)这种类型的条件判断，最后必须包含一个else分支，避免出现分支遗漏，造成错误；每个switch-case语句都必须保证有default，避免出现分支遗漏，造成错误。 
 
 5 在使用 Timer 或者 ScheduledThreadPoolExecutor 执行周期性任务时，实现Runnable接口必须在方法内捕获异常，避免因为异常抛出导致周期性住务失效，后续不会继续执行。
 
