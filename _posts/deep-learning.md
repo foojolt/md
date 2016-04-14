@@ -1,5 +1,4 @@
 ---
-title: deep-learning
 title: deep learning essentials
 date: 2016-03-28 11:07:14
 tags:
