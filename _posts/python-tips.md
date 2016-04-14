@@ -9,6 +9,110 @@ tags:
 
 PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。
 
+### system
+sys.version
+sys.platform
+sys.argv
+sys.maxint
+
+import re
+dir(re) inspect module, object
+
+### python type system
+base type: object
+primitive types: int, float, bool, long, complex
+container type: tuple, string, unicode, list, set, fronzenset, dictionary
+code type:
+internal type:
+
+immutable: tuple, string, unicode, fronzenset
+
+
+isinstance(12, object)
+
+### duck type
+1 + 1 is syntax of 1.__add__(1)
+[1,2,3][0] => [1,2,3].__getitem__(0)
+
+isinstance(obj, type) vs duck type
+
+
+### int float
+max value: sys.maxint, sys.float_info
+32bit cpu: 2**31 - 1, x64: 2**63 -1 
+
+long: not bounded
+
+literals 8 16 10 base: 0x123, 0123, 123
+
+right:
+2**2**3 = 2 ** ( 2 ** 3 )
+
+10.1 // 2 == 5.0
+
+
+### string unicode
+string is ascii characters
+
+unicode -> string:
+u'或者'.encode('utf-8')
+=> '\xe6\x88\x96\xe8\x80\x85'
+string -> unicode
+unicode('\xe6\x88\x96\xe8\x80\x85', 'utf8') => u'或者'
+
+len(u'或者') == 2
+
+### list map
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+letters[1]
+if 'a' in letters:
+    pass
+
+
+map = { "name": "bob", "age":123 }
+map["name"]
+if "name" in map:
+    pass
+
+for k,v in map.iteritems():
+    print k,v
+
+### python bytecode
+import dis
+
+def f():
+    pass
+dis.dis(f)
+
+### python debug
+
+break 或 b 设置断点  设置断点
+continue 或 c    继续执行程序
+list 或 l    查看当前行的代码段
+step 或 s    进入函数
+return 或 r  执行代码直到从当前函数返回
+exit 或 q    中止并退出
+next 或 n    执行下一行
+pp  打印变量的值
+help    帮助
+
+## yield
+python bytecode:
+YIELD_VALUE
+
+return generator, can send back information
+can't send non-None value to a just-started generator
+send will trigger next value
+
+
+### python pip
+
+see package version:
+pip show Flask
+pip list
+
+### Python numpy
+
 ### Python socket编程
 
 int listen(int sockfd, int backlog)
