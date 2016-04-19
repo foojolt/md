@@ -5,6 +5,11 @@ tags:
  - scrapy
 ---
 
+### context
+
+request.meta['item'] = Item()
+
+
 ### scrapy
 
     big python project management
