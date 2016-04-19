@@ -1,4 +1,9 @@
-
+---
+title: deep learning essentials
+date: 2016-04-01 11:07:14
+tags:
+ - deep-learning
+---
 
 ### Java 编程军规
 

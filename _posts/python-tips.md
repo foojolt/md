@@ -5,6 +5,10 @@ tags:
  - python
 ---
 
+### Python
+
+PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。
+
 ### system
 sys.version
 sys.platform
@@ -108,7 +112,6 @@ pip show Flask
 pip list
 
 ### Python numpy
-
 
 ### Python socket编程
 
