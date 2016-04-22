@@ -5,6 +5,28 @@ tags:
  - python
 ---
 
+### encoding
+import codecs
+codecs.decode( obj, "gbk" )
+
+default_encoding = 'utf-8'
+if sys.getdefaultencoding() != default_encoding:
+    reload(sys)
+    sys.setdefaultencoding(default_encoding)
+ 
+
+### csv
+
+csv.field_size_limit(sys.maxsize)
+
+import csv
+csv.reader(f)
+csv.writer(f)
+for row in reader:
+    pass
+writer.writerow([])
+
+
 ### Python
 
 PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。
